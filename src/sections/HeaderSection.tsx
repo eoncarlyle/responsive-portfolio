@@ -1,13 +1,16 @@
-import '../App.css';
-import headshot from '../images/headshot.jpg';
+import "../App.css";
+import headshot from "../images/headshot.jpg";
 
-function headerSection() {
-	return (<header className="page-header">
-		<img src={headshot} className="headshot" alt="Iain Schmitt's Headshot" />
-		<h1 className="header-name">Iain Wharton Schmitt</h1> 
-		<p className="footer-line"/>
-  	</header>
-  )
+// component need first char of fn name to be capitalized
+
+function HeaderSection() {
+  return (
+    <header className="page-header">
+      <img src={headshot} className="headshot" alt="Iain Schmitt's Headshot" />
+      <h1 className="header-name">Iain Wharton Schmitt</h1>
+      <p className="footer-line" />
+    </header>
+  );
 }
 
-export default headerSection;
+export default HeaderSection;
