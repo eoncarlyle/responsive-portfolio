@@ -1,0 +1,42 @@
+[{
+        "employer": "RELEX Solutions",
+        "position": "Technical Analyst",
+        "dateRange": "April 2021 — Present",
+        "summary": "As a Technical Analyst, I help build integrations between customer backend systems and RELEX's infrastructure, as well as diagnose complex technical challenges that arise during implementation and deployment",
+        "bullets": []
+    },
+    {
+        "employer": "Encephalo Investments",
+        "position": "Software Development Intern",
+        "dateRange": "June 2020 — March 2021",
+        "summary": "Part-time internship at University of Minnesota equity trading startup",
+        "bullets": [
+            "Developed portions of algorithmic trading platform leveraging RabbitMQ for event driven microservices",
+            "Wrote Python backtest framework to evaluate proprietary trading algorithm performance",
+            "Developed RESTful API using Flask for desktop application to access in-house quantitative analysis solutions",
+            "Used version control and implemented unit testing for software quality control"
+        ]
+    },
+    {
+        "employer": "Siepmann Research Group, University of Minnesota",
+        "position": "Undergraduate Research Assistant",
+        "dateRange": "April 2018 — February 2021",
+        "summary": "Position in Professor Siepmann's research laboratory, where I focused on using Monte-Carlo chemical simulations to explore phase equilibria of novel biofuel extraction processes",
+        "bullets": [
+            "Executed Monte-Carlo computer chemical simulations to model novel biofuel extraction process",
+            "Wrote suite of Python analysis programs for cluster distribution analysis and simulation troubleshooting",
+            "Awarded paid research assistantship after two months for progress made on project and technical skills"
+        ]
+    },
+    {
+        "employer": "Encapsys, LLC",
+        "position": "Process Design Engineering Co-op",
+        "dateRange": "January 2019 — August 2019",
+        "summary": "Chemical engineering co-op position at specialty chemicals company",
+        "bullets": [
+            "Successfully troubleshooted malfunctioning pilot scale clean-in-place system",
+            "Implemented batch-specific error projection in mixing scale-up program using historical scale-up data",
+            "Presented final project results to entire R&D team and 3 Senior Technical Managers and Leaders"
+        ]
+    }
+]

@@ -1,0 +1,6 @@
+[{
+    "name": "Offshore Wind Energy Twitter Bot (@state_bot)",
+    "position": "Sole Developer",
+    "dateRange": "September 2020",
+    "copy": "References real-time offshore wind speeds from National Data Buoy Center database and performs hypothetical wind energy potential calculations for farm of Vestas V117 wind turbines. Written in Clojure, hosted on Linode instance for continuous operation."
+}]

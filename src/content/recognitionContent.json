@@ -1,0 +1,24 @@
+[{
+        "name": "Undergraduate Research Assistantship",
+        "institution": "University of Minnesota Department of Chemistry",
+        "dateRange": "Fall 2018 — Spring 2021",
+        "copy": "Assistantship awarded to support my research efforts in Professor Siepmann's laboratory"
+    },
+    {
+        "name": "University of Minnesota Fridley Scholarship",
+        "institution": "University of Minnesota Department of Chemical Engineering",
+        "dateRange": "April 2018 and April 2020",
+        "copy": "Scholarship awarded to high achieving chemical engineering students at the University of Minnesota"
+    }, {
+        "name": "Dean's List",
+        "institution": "University of Minnesota College of Science and Engineering",
+        "dateRange": "Fall 2016 - Fall 2019",
+        "copy": "Awarded to College of Science and Engineering students that achieved an A- level GPA or higher over the semester, won the award for six consecutive semesters"
+    }, {
+
+        "name": "Gold National Scholarship",
+        "institution": "University of Minnesota Office of Admissions",
+        "dateRange": "May 2016",
+        "copy": "Scholarship for high achieving out-of-state students to offset the difference between in, out-of-state tuition"
+    }
+]
