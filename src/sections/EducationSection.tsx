@@ -1,5 +1,6 @@
 import "../App.css";
 import educationContent from "../content/educationContent.json"
+import { contentSectionElement } from "../App"
 
 class EducationItem {
 	institution: string;
@@ -23,9 +24,9 @@ function educationItemElement(educationItem: EducationItem) {
 }
 
 function EducationSection() {
-	return <div>
+	return contentSectionElement("Education", <div>
 		{educationContent.map(item => (educationItemElement(item)))}
-	</div>
+	</div>)
 }
 
 export default EducationSection;

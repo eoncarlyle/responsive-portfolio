@@ -1,5 +1,6 @@
 import "../App.css";
 import experienceContent from '../content/experienceContent.json';
+import { contentSectionElement } from "../App"
 
 class ExperienceItem {
 	employer: string;
@@ -30,9 +31,9 @@ function exerienceItemElement(experienceItem: ExperienceItem) {
 }
 
 function ExperienceSection() {
-	return <div>
+	return contentSectionElement("Experience", <div>
 		{experienceContent.map(item => (exerienceItemElement(item)))}
-	</div>
+	</div>)
 }
 
 export default ExperienceSection;

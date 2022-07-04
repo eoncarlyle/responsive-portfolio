@@ -1,5 +1,6 @@
 import "../App.css";
 import recogitionContent from "../content/recognitionContent.json"
+import { contentSectionElement } from "../App"
 
 class RecognitionItem {
 	name: string;
@@ -23,9 +24,9 @@ function recognitionItemElement(recognitionItem: RecognitionItem) {
 }
 
 function recognitionSection() {
-	return <div>
+	return contentSectionElement("Recognition", <div>
 		{recogitionContent.map(item => (recognitionItemElement(item)))}
-	</div>;
+	</div>);
 }
 
 export default recognitionSection; 

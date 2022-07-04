@@ -1,12 +1,13 @@
 import "../App.css";
 import projectsContent from "../content/projectsContent.json"
+import { contentSectionElement } from "../App"
 
 class ProjectsItem {
 	name: string;
 	position: string;
 	dateRange: string;
 	copy: string;
-	
+
 	constructor(name: string, position: string, dateRange: string, copy: string) {
 		this.name = name; this.position = position; this.dateRange = dateRange; this.copy = copy;
 	}
@@ -23,9 +24,9 @@ function projectsItemElement(projectsItem: ProjectsItem) {
 }
 
 function projectsSection() {
-	return <div>
+	return contentSectionElement("Projects", <div>
 		{projectsContent.map(item => (projectsItemElement(item)))}
-	</div>;
+	</div>);
 }
 
 export default projectsSection;

@@ -7,15 +7,7 @@ import ProjectsSection from "./sections/ProjectsSection";
 import FooterSection from "./sections/FooterSection";
 import RecognitionSection from "./sections/RecognitionSection"
 
-const contentSections: [string, JSX.Element][] = [
-  ["Experience", <ExperienceSection/>],
-  ["Education", <EducationSection/>],
-  ["Skills", <SkillsSection/>],
-  ["Projects", <ProjectsSection/>],
-  ["Recognition", <RecognitionSection/>]
-]
-
-function contentSectionElement(
+export function contentSectionElement(
   title: string,
   body: JSX.Element,
 ) {
@@ -32,13 +24,13 @@ function contentSectionElement(
 function App() {
   return (
     <div className="wrapper">
-      {<HeaderSection />}
-      {contentSections.map(
-        section => (
-          contentSectionElement(section[0], section[1])
-        )
-      )}
-      {<FooterSection />}
+      <HeaderSection />
+      <ExperienceSection />
+      <EducationSection /> 
+      <SkillsSection />
+      <ProjectsSection />
+      <RecognitionSection />
+      <FooterSection />
     </div>
   );
 }
