@@ -1,5 +1,5 @@
-import '../App.css';
-import skillsContent from '../content/skillsContent.json'
+import "../App.css";
+import skillsContent from "../content/skillsContent.json"
 
 class SkillsItem {
 	title: string;
@@ -19,8 +19,10 @@ function skillsItemElement(skillsItem: SkillsItem) {
 	)
 }
 
-function skillsSection() {
-	return skillsContent.map(item => (skillsItemElement(item)))
+function SkillsSection() {
+	return <div>
+		{skillsContent.map(item => (skillsItemElement(item)))}
+	</div>
 }
 
-export default skillsSection;
+export default SkillsSection;

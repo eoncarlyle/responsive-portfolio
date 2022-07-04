@@ -1,5 +1,5 @@
-import '../App.css';
-import projectsContent from '../content/projectsContent.json'
+import "../App.css";
+import projectsContent from "../content/projectsContent.json"
 
 class ProjectsItem {
 	name: string;
@@ -23,7 +23,9 @@ function projectsItemElement(projectsItem: ProjectsItem) {
 }
 
 function projectsSection() {
-	return projectsContent.map(item => (projectsItemElement(item)));
+	return <div>
+		{projectsContent.map(item => (projectsItemElement(item)))}
+	</div>;
 }
 
 export default projectsSection;

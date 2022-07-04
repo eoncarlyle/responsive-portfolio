@@ -1,4 +1,4 @@
-import '../App.css';
+import "../App.css";
 import experienceContent from '../content/experienceContent.json';
 
 class ExperienceItem {
@@ -29,8 +29,10 @@ function exerienceItemElement(experienceItem: ExperienceItem) {
 	)
 }
 
-function experienceSection() {
-	return experienceContent.map(item => (exerienceItemElement(item)))
+function ExperienceSection() {
+	return <div>
+		{experienceContent.map(item => (exerienceItemElement(item)))}
+	</div>
 }
 
-export default experienceSection;
+export default ExperienceSection;

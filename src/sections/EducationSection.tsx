@@ -1,5 +1,5 @@
-import '../App.css';
-import educationContent from '../content/educationContent.json'
+import "../App.css";
+import educationContent from "../content/educationContent.json"
 
 class EducationItem {
 	institution: string;
@@ -22,8 +22,10 @@ function educationItemElement(educationItem: EducationItem) {
 	)
 }
 
-function educationSection() {
-	return educationContent.map(item => (educationItemElement(item)));
+function EducationSection() {
+	return <div>
+		{educationContent.map(item => (educationItemElement(item)))}
+	</div>
 }
 
-export default educationSection;
+export default EducationSection;

@@ -1,6 +1,6 @@
-import '../App.css';
+import "../App.css";
 
-function footerSection() {
+function FooterSection() {
 	return (
 		<footer className="page-footer">
 			<p className="footer-line"></p>
@@ -8,4 +8,4 @@ function footerSection() {
 	)
 }
 
-export default footerSection;
+export default FooterSection;

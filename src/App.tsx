@@ -1,51 +1,44 @@
-import React from 'react';
-import './App.css';
-import headerSection from './sections/HeaderSection';
-import experienceSection from './sections/ExperienceSection';
-import educationSection from './sections/EducationSection';
-import skillsSection from './sections/SkillsSection';
-import projectsSection from './sections/ProjectsSection';
-import footerSection from './sections/FooterSection';
-import recognitionSection from './sections/RecognitionSection'
+import "./App.css";
+import HeaderSection from "./sections/HeaderSection";
+import ExperienceSection from "./sections/ExperienceSection";
+import EducationSection from "./sections/EducationSection";
+import SkillsSection from "./sections/SkillsSection";
+import ProjectsSection from "./sections/ProjectsSection";
+import FooterSection from "./sections/FooterSection";
+import RecognitionSection from "./sections/RecognitionSection"
 
-class ContentSection {
-  title: String;
-  body: JSX.Element | JSX.Element[];
-
-  constructor(title: String, body: JSX.Element | JSX.Element[]) {
-    this.title = title; this.body = body;
-  }
-}
-
-const contentSections = [
-  new ContentSection("Experience", experienceSection()), 
-  new ContentSection("Education", educationSection()),
-  new ContentSection("Skills", skillsSection()),
-  new ContentSection("Projects", projectsSection()),
-  new ContentSection("Recognition", recognitionSection())
+const contentSections: [string, JSX.Element][] = [
+  ["Experience", <ExperienceSection/>],
+  ["Education", <EducationSection/>],
+  ["Skills", <SkillsSection/>],
+  ["Projects", <ProjectsSection/>],
+  ["Recognition", <RecognitionSection/>]
 ]
 
-function contentSectionElement(title: String, body: JSX.Element| JSX.Element[]) {
+function contentSectionElement(
+  title: string,
+  body: JSX.Element,
+) {
   return (
-    <div className='content-section'>
+    <div className="content-section">
       <header className="section-header">
         <h2>{title}</h2>
       </header>
       {body}
     </div>
-  )
+  );
 }
 
 function App() {
   return (
     <div className="wrapper">
-      {headerSection()}
+      {<HeaderSection />}
       {contentSections.map(
         section => (
-          contentSectionElement(section.title, section.body)
+          contentSectionElement(section[0], section[1])
         )
       )}
-      {footerSection()}
+      {<FooterSection />}
     </div>
   );
 }
