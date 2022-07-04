@@ -2,7 +2,6 @@ import "./App.css";
 import HeaderSection from "./sections/HeaderSection";
 import ExperienceSection from "./sections/ExperienceSection";
 import EducationSection from "./sections/EducationSection";
-import SkillsSection from "./sections/SkillsSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import FooterSection from "./sections/FooterSection";
 import RecognitionSection from "./sections/RecognitionSection"
@@ -26,8 +25,7 @@ function App() {
     <div className="wrapper">
       <HeaderSection />
       <ExperienceSection />
-      <EducationSection /> 
-      <SkillsSection />
+      <EducationSection />
       <ProjectsSection />
       <RecognitionSection />
       <FooterSection />
