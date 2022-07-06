@@ -1,0 +1,23 @@
+---
+- hosts: linode0 
+  vars:
+    build_dir: /build/responsive-portfolio
+  tasks:
+    - name: Clear past build
+      file:
+        path: build_dir
+        state: absent
+    - name: Clone Website Repository
+      git: 
+        repo: https://github.com/eoncarlyle/responsive-portfolio.git
+        dest: '{{ build_dir }}'
+        clone: yes
+        update: yes
+    - name: Install NPM Dependencies
+      command:
+        chdir: '{{ build_dir }}'
+        cmd: 'npm install'
+    - name: Build React App
+      command:
+        chdir: '{{ build_dir }}'
+        cmd: 'node --max_old_space_size=128 node_modules/.bin/react-scripts build'
